@@ -266,6 +266,30 @@ nav ul {
     display: flex;
     justify-content: space-between;
 }
+header {
+    grid-area: header;
+    
+}
+nav {
+    grid-area: nav;
+}
+#intro {
+    grid-area: intro;
+}
+#main-section {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-areas: "header header header header intro"
+    "nav nav nav nav intro"
+    "main main main main bestsellers"
+    "footer footer footer footer footer"
+}
 
 
 
