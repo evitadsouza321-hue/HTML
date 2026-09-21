@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title
+        >Add more images in slider</title>
+    </head>
+    <body>
+        <section>
+            <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkaXPXGReN0a_e58ZMIIZnFvY9GpJ8Ve12EEPVTNNZGA&s=10" style="height:500px; width: 1340px;">
+            <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxk6ZeSIfH485hTG90YYdyCrf9dqrrs7vQS7aHgLkJ6Q&s=10" style="height:500px; width: 1340px;">
+            <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLqTh4_uhhiivDc3ED2AStFH6MYTMOHiMYK9cepltsUQ&s=10" style="height:500px; width:1340px";>
+            
+            </section>
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel {
+                    var i;
+                    var x = document.getElementsByClassName ("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                        if (myIndex > x.length) {myIndex = 1}
+                        x[myIndex-1].style.display = "block";
+                        setTimeout(carousel, 3000);
+                    }
+
+                }
+            </script>
+        
+    </body>
+</html>
